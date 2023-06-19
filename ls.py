@@ -1,14 +1,13 @@
 #!/bin/python3
 
-import os
-from datetime import datetime
-import time
-import pytz
-from pwd import getpwuid
-import grp
 import argparse
+import grp
+import os
+import time
+from datetime import datetime
+from pwd import getpwuid
 
-
+import pytz
 
 ##
 ##	HELPER
@@ -70,7 +69,6 @@ def datestring(unix):
 	if unix < delta:
 		return pytz.timezone("UTC").localize(datetime.fromtimestamp(unix)).astimezone(pytz.timezone("UTC")).strftime('%b  %e  %Y')		#-d 
 	return pytz.timezone("UTC").localize(datetime.fromtimestamp(unix)).astimezone(pytz.timezone("UTC")).strftime('%b  %e %H:%M')		#-d 
-	return moddate
 
 #
 #check if file is dir or file, if file return -, else return d
