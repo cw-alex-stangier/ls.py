@@ -218,7 +218,7 @@ def printelementslong():
 							if not file.startswith("."):
 								printverbose(file, os.getcwd())
 					except Exception as e:
-						print(f"\033[91m{path}{file} may not be valid. {e} \033[0m")
+						print(f"\033[91m{args.path}{file} may not be valid. {e} \033[0m")
 	else:
 		# multiple paths given
 		for path in args.path:
