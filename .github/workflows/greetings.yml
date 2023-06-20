@@ -13,7 +13,7 @@ jobs:
 
         uses: Bhupesh-V/memer-action@master
         with:
-          filter: "new"
+          filter: "hot"
 
       - name: Check Outputs
         run: |
