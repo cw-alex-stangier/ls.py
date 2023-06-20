@@ -1,6 +1,6 @@
 name: Memer Workflow
 
-on: [pull_request]
+on: [push]
 
 jobs:
   greeting:
